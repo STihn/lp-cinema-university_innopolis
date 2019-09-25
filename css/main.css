@@ -1,3 +1,17 @@
 body{
+box-sizing:border-box;
+padding:0;
+margin: 0  auto;
+}
+.logo{
 
+}
+.head{
+    background: black;
+}
+.nav__head{
+    display: inline;
+}
+li{
+    color: white;
 }
