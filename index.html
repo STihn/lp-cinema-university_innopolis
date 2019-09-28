@@ -8,20 +8,25 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
+        <!-- Шапка сайта, с логотипом,навигацией и блоком "Добро пожаловать" -->
         <header>
             <div class="head">
-                <a href="http://university.innopolis.ru/"><img src="/images/logo.png" class="logo" alt="university innopolis"></a>
+                <a href="http://university.innopolis.ru/" target="_blank" title="Университет Иннополис">
+                    <img src="/images/logo.png" class="logo" alt="Университет Иннополис" title="Университет Иннополис">
+                </a>
                 <nav>
-                    <ul class="nav__head">
-                        <li>заказать билеты</li>
-                        <li>преимущества</li>
-                        <li>фильмы</li>
-                        <li>контакты</li>
+                    <ul class="head__nav">
+                        <li><a href="#zakaz-biletov">заказать билеты</a></li>
+                        <li><a href="#preimushestva">преимущества</a></li>
+                        <li><a href="#films">фильмы</a></li>
+                        <li><a href="#kontakt">контакты</a></li>
                     </ul>
                 </nav>
+                <span>Ваш город:</span>
+                <u>Москва</u>
             </div>
-        <h1>закажите билет в кино</h1>
-        <p>Всем покупателям подарок!</p>
+            <h1>закажите билет в кино</h1>
+            <p>Всем покупателям подарок!</p>
             <div>
                 <b>Добро пожаловать</b>
                 <blockquote>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere
@@ -30,81 +35,140 @@
                         minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</blockquote>
             </div>
         </header>
-        <section>
+        <!-- Блок "Почему Мы" с 3 картинками  -->
+        <section id="preimushestva">
+            <form>
+                    <p>Укажите почтовые адреса через запятую:</p>   
+                    <p><input type="email" name="email" required multiple></p>
+                    <p><input type="submit" value="Отправить"></p>
+                <input value="" name="your name" required placeholder="Ваше имя"/>
+                <input value="" name="your surName" required placeholder="Ваша фамилия"/>
+                <label for="one">1</label>
+                <input id="one" type="radio" value="1" name="some"/>
+                <label>2</label>
+                <input type="radio" value="2" name="some"/>
+                <input type="submit" value="заказать"/>
+                <button type="submit">1</button>
+                <button type="button">заказать</button>
+
+                <input type="file" name="photo" required multiple
+                title="Загрузите одну или несколько фотографий"/>
+
+                <select>
+                    <option>cap</option>
+                    <option>wap</option>
+                    <option>gap</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </select>
+                <textarea></textarea>
+            </form>
+        <div style="background-color: aqua">
+            <ol type="I">
+                <li>da</li>
+                <li>da</li>
+                <li>da</li>
+                <li>da</li>
+            </ol>  
+        </div>
             <h2>Почему мы?</h2>
             <div>
-                <div><img src="/images/icon_1.png">
+                <div><img src="/images/icon_1.png" alt="Большие экраны" title="Большие экраны">
                 <h3>Большие экраны</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, laboriosam ratione expedita ducimus iusto, 
                     delectus neque earum culpa maiores natus perspiciatis aperiam in, ea vel blanditiis dignissimos voluptates recusandae non.</p>
                 </div>
                 <div>
-                    <img src="/images/icon_2.png">
+                    <img src="/images/icon_2.png" alt="Объемный звук" title="Объемный звук">
                     <h3>Объемный звук</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti at dolores nisi nam iusto repellendus similique. 
                         Dolor ab qui quidem quam molestias magnam nisi eius dolores, neque nulla architecto. Esse.</p>
                 </div>
                 <div>
-                    <img src="/images/icon_3.png">
+                    <img src="/images/icon_3.png" alt="Удобные кресла" title="Удобные кресла">
                     <h3>Удобные кресла</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis consequuntur atque perspiciatis impedit veniam similique odit?
                          Adipisci laborum earum voluptates, sapiente laboriosam, harum porro asperiores minima ipsum id eligendi placeat!</p>
                 </div>
             </div>
         </section>
-        <section>
+        <!-- Блок с таблицой -->
+        <section id="zakaz-biletov">
             <h2>Выберите фильм</h2>
-            <table border="1">
+            <table border="1" cellpadding="10" cellspacing="5">
+                <thead>
                 <tr>
-                    <th>Время</th>
-                    <th>Сеансы фильмов</th>
+                    <th>Начало сеанса</th>
+                    <th>Название фильма</th>
+                    <th colspan="2">Жанр</th>
                 </tr>
+            </thead>
+            <tfoot><tr><td>1</td></tr></tfoot>
+            <tbody>
                 <tr>
-                    <td>10 - 12</td>
-                    <td>человек-паук</td>
+                    <td>10:00</td>
+                    <td><a href="https://www.kinopoisk.ru/film/838/" title="kinopoisk: Человек-паук">Человек-паук</a></td>
+                    <td>Фантастика,Боевик,Приключения</td>
                     <td>+</td>
                 </tr>
                 <tr>
-                    <td>12 - 2</td>
-                    <td>человек-паук</td>
+                    <td>12:00</td>
+                    <td><a href="https://www.kinopoisk.ru/film/1122114/" title="kinopoisk: Собачья жизнь 2">Собачья жизнь 2</a></td>
+                    <td>Фэнтези,Драма,Комедия</td>
                     <td>+</td>
                 </tr>
                 <tr>
-                    <td>2 - 3</td>
-                    <td>человек-паук</td>
+                    <td>14:00</td>
+                    <td><a href="https://www.kinopoisk.ru/film/846824/" title="kinopoisk: История игрушек 4">История игрушек 4</a></td>
+                    <td>Мультфильм,Фэнтези,Комедия</td>
                     <td>+</td>
                 </tr>
                 <tr>
-                    <td>3 - 5</td>
-                    <td>человек-паук</td>
+                    <td>16:00</td>
+                    <td><a href="https://www.kinopoisk.ru/film/693730/" title="kinopoisk: Люди в черном: Интернэшнл">Люди в черном: Интернэшнл</a></td>
+                    <td>Фантастика,Боевик,Комедия</td>
                     <td>+</td>
                 </tr>
+            </tbody>
             </table>
             <i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ipsam consequuntur hic et eligendi, 
                 veritatis culpa repellat, doloribus repudiandae laudantium quam enim sapiente deleniti aliquam facilis beatae autem odit? Atque?</i>
         </section>
+        <!-- Блок с зеленой кнопкой и подарком -->
         <section>
             <div>
-                <img src="/images/box_presents.png">
+                <img src="/images/box_presents.png" alt="Подарок" title="подарок">
             </div>
             <div>
                 <h2>Подарок каждому!</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima natus earum, quis harum aliquam!
                      Odio quo rerum id optio, corporis laboriosam dolore recusandae ducimus! Eius, quidem cupiditate? Iste, earum!</p>
             </div>
-            <button>podarok</button>
+            <form action="index.php" method="post">
+                    <p>Укажите Ваш E-mail(Можно ввести несколько E-mail):</p>   
+                    <p><input type="email" name="email" required multiple></p>
+                    <p><input type="submit" value="Отправить"></p>
+                <button type="">Получить подарок</button>
+            </form> 
         </section>
-        <section>
+        <!-- Каталог фильмов -->
+        <section id="films">
             <h2>Фильмы</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ratione laborum magni.</p>
         </section>
+        <!-- Карта расположения -->
         <section>
             maps
         </section>
-        <footer>
+        <!-- Подвал сайта -->
+        <footer id="kontakt">
             <div>icon</div>
             <span>Hope we see you at the event! All Rights Reserved. Envato Bangladesh</span>
         </footer>
- 
     </body>
 </html>
