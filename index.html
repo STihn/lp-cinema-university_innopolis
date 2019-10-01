@@ -37,45 +37,6 @@
         </header>
         <!-- Блок "Почему Мы" с 3 картинками  -->
         <section id="preimushestva">
-            <form>
-                    <p>Укажите почтовые адреса через запятую:</p>   
-                    <p><input type="email" name="email" required multiple></p>
-                    <p><input type="submit" value="Отправить"></p>
-                <input value="" name="your name" required placeholder="Ваше имя"/>
-                <input value="" name="your surName" required placeholder="Ваша фамилия"/>
-                <label for="one">1</label>
-                <input id="one" type="radio" value="1" name="some"/>
-                <label>2</label>
-                <input type="radio" value="2" name="some"/>
-                <input type="submit" value="заказать"/>
-                <button type="submit">1</button>
-                <button type="button">заказать</button>
-
-                <input type="file" name="photo" required multiple
-                title="Загрузите одну или несколько фотографий"/>
-
-                <select>
-                    <option>cap</option>
-                    <option>wap</option>
-                    <option>gap</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                </select>
-                <textarea></textarea>
-            </form>
-        <div style="background-color: aqua">
-            <ol type="I">
-                <li>da</li>
-                <li>da</li>
-                <li>da</li>
-                <li>da</li>
-            </ol>  
-        </div>
             <h2>Почему мы?</h2>
             <div>
                 <div><img src="/images/icon_1.png" alt="Большие экраны" title="Большие экраны">
@@ -98,9 +59,11 @@
             </div>
         </section>
         <!-- Блок с таблицой -->
-        <section id="zakaz-biletov">
-            <h2>Выберите фильм</h2>
-            <table border="1" cellpadding="10" cellspacing="5">
+        <section id="zakaz-biletov" class="block_04">
+            <div class="block_04__header">
+                <h2>Выберите фильм</h2>
+            </div>
+            <table  cellpadding="10" cellspacing="0" class="block_04__table">
                 <thead>
                 <tr>
                     <th>Начало сеанса</th>
@@ -108,7 +71,6 @@
                     <th colspan="2">Жанр</th>
                 </tr>
             </thead>
-            <tfoot><tr><td>1</td></tr></tfoot>
             <tbody>
                 <tr>
                     <td>10:00</td>
@@ -136,8 +98,10 @@
                 </tr>
             </tbody>
             </table>
+            <div class="block_04__kursiv">
             <i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ipsam consequuntur hic et eligendi, 
                 veritatis culpa repellat, doloribus repudiandae laudantium quam enim sapiente deleniti aliquam facilis beatae autem odit? Atque?</i>
+            </div>
         </section>
         <!-- Блок с зеленой кнопкой и подарком -->
         <section>
@@ -153,7 +117,7 @@
                     <p>Укажите Ваш E-mail(Можно ввести несколько E-mail):</p>   
                     <p><input type="email" name="email" required multiple></p>
                     <p><input type="submit" value="Отправить"></p>
-                <button type="">Получить подарок</button>
+                <button type="button">Получить подарок</button>
             </form> 
         </section>
         <!-- Каталог фильмов -->

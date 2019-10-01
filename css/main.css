@@ -1,14 +1,58 @@
+@font-face {
+    font-family: Roboto-Bold; 
+    src: url(/fonts/Roboto-Bold.ttf);
+}
 body{
-box-sizing:border-box;
-padding:0;
-margin: 0  auto;
+    box-sizing:border-box;
+    padding: 0px;
+    margin: 0px  auto;
+    max-width: 1366px;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+}
+th{
+height: 55px;
+background-color: #a3cc40;
+}
+tr:nth-child(odd){
+    background-color: #373737;
+}
+tr:nth-child(even){
+    background-color: #6c6c6c;
 }
 .head{
-    background: black;
+    background: grey;
 }
 .head__nav{
-    display: inline;
+    display: inline-block;
 }
-li{
-    color: white;
+.block_04{
+position: relative;
+}
+.block_04__header>h2{
+    padding:0 0 40px 480px;
+    font-size: 50px;
+    font-family: "Roboto-Bold";
+    color: rgb(37, 37, 37);
+    line-height: 1.2;   
+}
+.block_04__table{
+    position: inherit;
+    left:170px;
+    width: 1030px;
+    vertical-align:top;
+    height: 375px;
+    border-radius: 20px;
+    text-align:left;
+    overflow: hidden;
+    color:#ffffff;    
+}
+.block_04__kursiv{
+    position: inherit;
+    left:270px;
+    text-align: center;
+    width: 830px; 
 }
