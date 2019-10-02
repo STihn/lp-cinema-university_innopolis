@@ -2,11 +2,25 @@
     font-family: Roboto-Bold; 
     src: url(/fonts/Roboto-Bold.ttf);
 }
+@font-face {
+    font-family: Roboto-Light; 
+    src: url(/fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto-Black; 
+    src: url(/fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Roboto-Regular; 
+    src: url(/fonts/Roboto-Regular.ttf);
+}
 body{
     box-sizing:border-box;
     padding: 0px;
     margin: 0px  auto;
     max-width: 1366px;
+    outline: 0;
+    text-decoration: none;
 }
 a{
     text-decoration: none;
@@ -14,8 +28,17 @@ a{
     color: #ffffff;
 }
 th{
-height: 55px;
-background-color: #a3cc40;
+    padding: 19px 0;
+    background-color: #a3cc40;
+    font-size: 30px;
+    font-family: "Roboto-Black";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    content: "▼"  
+}
+th::after{
+    content: "▼" 
 }
 tr:nth-child(odd){
     background-color: #373737;
@@ -23,36 +46,53 @@ tr:nth-child(odd){
 tr:nth-child(even){
     background-color: #6c6c6c;
 }
+td{
+    font-size: 22px;
+    font-family: "Roboto-Regular";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    padding: 25px 0;
+}
 .head{
     background: grey;
 }
 .head__nav{
     display: inline-block;
 }
-.block_04{
-position: relative;
-}
-.block_04__header>h2{
-    padding:0 0 40px 480px;
+.booking__header>h2{
+    text-align: center;
+    padding-bottom:80px;
     font-size: 50px;
     font-family: "Roboto-Bold";
     color: rgb(37, 37, 37);
-    line-height: 1.2;   
+    line-height: 1.2;
+    margin: 0;   
 }
-.block_04__table{
-    position: inherit;
-    left:170px;
-    width: 1030px;
+.container{
+    max-width: 1030px;
+    margin: 0 auto;
+}
+.booking__table{
+    width: 100%;
+    border-radius: 15px;
     vertical-align:top;
-    height: 375px;
-    border-radius: 20px;
     text-align:left;
     overflow: hidden;
-    color:#ffffff;    
+    color:#ffffff;
+    margin-bottom:40px;   
 }
-.block_04__kursiv{
-    position: inherit;
-    left:270px;
+.table__icon{
+    padding-right: 50px;
+    background: url(../images/More-icon.png) no-repeat  center;
+    background-size: 33px;
+}
+.booking__italic{
+    max-width: 830px;
+    margin: 0 auto;
     text-align: center;
-    width: 830px; 
+    font-size: 14px;
+    font-family: "Roboto-Light";
+    color: rgb(36, 36, 36);
+    line-height: 1.2;     
 }
