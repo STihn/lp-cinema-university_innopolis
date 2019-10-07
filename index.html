@@ -38,24 +38,46 @@
         <!-- Блок "Почему Мы" с 3 картинками  -->
         <section>
             <div id="advantages">
-                <h2>Почему мы?</h2>
-                <div>
-                    <div><img src="/images/icon_1.png" alt="Большие экраны" title="Большие экраны">
-                        <h3>Большие экраны</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, laboriosam ratione expedita ducimus iusto, 
-                        delectus neque earum culpa maiores natus perspiciatis aperiam in, ea vel blanditiis dignissimos voluptates recusandae non.</p>
+                <div class="advantages__head">
+                        <h2>Почему мы?</h2>
+                </div>
+                <div></div>
+                <div class="advantages__main">
+                    <div class="advantages__block">
+                        <div class="advantages__image">
+                            <img src="/images/icon_1.png" alt="Большие экраны" title="Большие экраны">
+                        </div>
+                        <div class="advantages__subtitle">
+                            <h3>Большие экраны</h3>
+                        </div>
+                        <div class="advantages__text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, laboriosam ratione expedita ducimus iusto, 
+                            delectus neque earum culpa maiores natus perspiciatis aperiam in, ea vel blanditiis dignissimos voluptates recusandae non.</p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="/images/icon_2.png" alt="Объемный звук" title="Объемный звук">
-                        <h3>Объемный звук</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti at dolores nisi nam iusto repellendus similique. 
-                        Dolor ab qui quidem quam molestias magnam nisi eius dolores, neque nulla architecto. Esse.</p>
+                    <div class="advantages__block">
+                        <div class="advantages__image">
+                            <img  src="/images/icon_2.png" alt="Объемный звук" title="Объемный звук">
+                        </div>
+                        <div class="advantages__subtitle">
+                            <h3>Объемный звук</h3>
+                        </div>
+                        <div class="advantages__text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti at dolores nisi nam iusto repellendus similique. 
+                            Dolor ab qui quidem quam molestias magnam nisi eius dolores, neque nulla architecto. Esse.</p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="/images/icon_3.png" alt="Удобные кресла" title="Удобные кресла">
-                        <h3>Удобные кресла</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis consequuntur atque perspiciatis impedit veniam similique odit?
+                    <div class="advantages__block">
+                        <div class="advantages__image">
+                            <img  src="/images/icon_3.png" alt="Удобные кресла" title="Удобные кресла">
+                        </div>
+                        <div class="advantages__subtitle">
+                            <h3>Удобные кресла</h3>
+                        </div>
+                        <div class="advantages__text">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis consequuntur atque perspiciatis impedit veniam similique odit?
                             Adipisci laborum earum voluptates, sapiente laboriosam, harum porro asperiores minima ipsum id eligendi placeat!</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,43 +89,44 @@
                     <h2>Выберите фильм</h2>
                 </div>
                 <div class="container">
-                    <table cellpadding="0" cellspacing="0" class="booking__table">
+                    <table  class="table">
                         <thead>
                         <tr>
-                            <th class="table_item"><a href="#">Начало сеанса</a></th>
-                            <th><a href="#">Название фильма</a></th>
-                            <th colspan="2"><a href="#">Жанр</a></th>
+                            <th class="table__item"><a href="#">Начало сеанса</a></th>
+                            <th class="table__item"><a href="#">Название фильма</a></th>
+                            <th>Жанр</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>10:00</td>
-                            <td><a href="https://www.kinopoisk.ru/film/838/" title="kinopoisk: Человек-паук">Человек-паук</a></td>
-                            <td>Фантастика,Боевик,Приключения</td>
+                            <td class="table__cell">10:00</td>
+                            <td class="table__mid"><a href="https://www.kinopoisk.ru/film/838/" title="kinopoisk: Человек-паук">Человек-паук</a></td>
+                            <td>Фантастика, Боевик, Приключения</td>
                             <td class="table__icon"></td>
                         </tr>
                         <tr>
-                            <td>12:00</td>
-                            <td><a href="https://www.kinopoisk.ru/film/1122114/" title="kinopoisk: Собачья жизнь 2">Собачья жизнь 2</a></td>
-                            <td>Фэнтези,Драма,Комедия</td>
+                            <td class="table__cell">12:00</td>
+                            <td class="table__mid"><a href="https://www.kinopoisk.ru/film/1122114/" title="kinopoisk: Собачья жизнь 2">Собачья жизнь 2</a></td>
+                            <td>Фэнтези, Драма, Комедия</td>
                             <td class="table__icon"></td>
                         </tr>
                         <tr>
-                            <td>14:00</td>
-                            <td><a href="https://www.kinopoisk.ru/film/846824/" title="kinopoisk: История игрушек 4">История игрушек 4</a></td>
-                            <td>Мультфильм,Фэнтези,Комедия</td>
+                            <td class="table__cell">14:00</td>
+                            <td class="table__mid"><a href="https://www.kinopoisk.ru/film/846824/" title="kinopoisk: История игрушек 4">История игрушек 4</a></td>
+                            <td>Мультфильм, Фэнтези, Комедия</td>
                             <td class="table__icon"></td>
                         </tr>
                         <tr>
-                            <td>16:00</td>
-                            <td><a href="https://www.kinopoisk.ru/film/693730/" title="kinopoisk: Люди в черном: Интернэшнл">Люди в черном: Интернэшнл</a></td>
-                            <td>Фантастика,Боевик,Комедия</td>
+                            <td class="table__cell">16:00</td>
+                            <td class="table__mid"><a href="https://www.kinopoisk.ru/film/693730/" title="kinopoisk: Люди в черном: Интернэшнл">Люди в черном: Интернэшнл</a></td>
+                            <td>Фантастика, Боевик, Комедия</td>
                             <td class="table__icon"></td>
                         </tr>
                     </tbody>
                     </table>
                 </div>
-                    <div class="booking__italic">
+                    <div class="italic">
                     <i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ipsam consequuntur hic et eligendi, 
                     veritatis culpa repellat, doloribus repudiandae laudantium quam enim sapiente deleniti aliquam facilis beatae autem odit? Atque?</i>
                     </div> 
