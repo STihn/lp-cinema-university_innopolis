@@ -5,34 +5,43 @@
         <meta charset="UTF-8">
         <title>Продажа билетов в кино в Иннополисе</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
         <!-- Шапка сайта, с логотипом,навигацией и блоком "Добро пожаловать" -->
         <header>
             <div class="head">
-                <a href="http://university.innopolis.ru/" target="_blank" title="Университет Иннополис">
-                    <img src="/images/logo.png" class="logo" alt="Университет Иннополис" title="Университет Иннополис">
-                </a>
-                <nav>
-                    <ul class="head__nav">
-                        <li><a href="#booking">заказать билеты</a></li>
-                        <li><a href="#advantages">преимущества</a></li>
-                        <li><a href="#films">фильмы</a></li>
-                        <li><a href="#contact">контакты</a></li>
-                    </ul>
-                </nav>
-                <span>Ваш город:</span>
-                <u>Москва</u>
+                <div class="head__container"> 
+                    <div class="head__logo">
+                        <a href="http://university.innopolis.ru/" target="_blank" title="Университет Иннополис">
+                            <img src="/images/logo.png" class="logo" alt="Университет Иннополис" title="Университет Иннополис">
+                        </a>
+                    </div>
+                    <div class="head__navigation">
+                        <nav class="head__nav">
+                            <ul>
+                                <li><a href="#booking">заказать билеты</a></li>
+                                <li><a href="#advantages">преимущества</a></li>
+                                <li><a href="#films">фильмы</a></li>
+                                <li><a href="#contact">контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="head__city">
+                        <span class="head__list">Ваш город:</span>
+                        <a href="#">Москва</a>
+                    </div>
+                    <h1>закажите билет в кино</h1>
+                    <p class="head__subtitle">Всем покупателям подарок!</p>
+                </div>   
             </div>
-            <h1>закажите билет в кино</h1>
-            <p>Всем покупателям подарок!</p>
-            <div>
-                <b>Добро пожаловать</b>
-                <blockquote>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere
-                        minima optio perferendis quibusdam quis reprehenderit, saepe! </blockquote>
-                <blockquote>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere
-                        minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</blockquote>
+            <div class="head__desc">
+                    <p class="head__slogan">Добро пожаловать!</p>
+                    <p class="head__text">Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere
+                            minima optio perferendis quibusdam quis reprehenderit, saepe! </p>
+                    <p class="head__text">Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere
+                            minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</p>
             </div>
         </header>
         <!-- Блок "Почему Мы" с 3 картинками  -->
@@ -89,7 +98,7 @@
                     <h2>Выберите фильм</h2>
                 </div>
                 <div class="container">
-                    <table  class="table">
+                    <table class="table">
                         <thead>
                         <tr>
                             <th class="table__item"><a href="#">Начало сеанса</a></th>
@@ -102,25 +111,25 @@
                         <tr>
                             <td class="table__cell">10:00</td>
                             <td class="table__mid"><a href="https://www.kinopoisk.ru/film/838/" title="kinopoisk: Человек-паук">Человек-паук</a></td>
-                            <td>Фантастика, Боевик, Приключения</td>
+                            <td class="table__text">Фантастика, Боевик, Приключения</td>
                             <td class="table__icon"></td>
                         </tr>
                         <tr>
                             <td class="table__cell">12:00</td>
                             <td class="table__mid"><a href="https://www.kinopoisk.ru/film/1122114/" title="kinopoisk: Собачья жизнь 2">Собачья жизнь 2</a></td>
-                            <td>Фэнтези, Драма, Комедия</td>
+                            <td class="table__text">Фэнтези, Драма, Комедия</td>
                             <td class="table__icon"></td>
                         </tr>
                         <tr>
                             <td class="table__cell">14:00</td>
                             <td class="table__mid"><a href="https://www.kinopoisk.ru/film/846824/" title="kinopoisk: История игрушек 4">История игрушек 4</a></td>
-                            <td>Мультфильм, Фэнтези, Комедия</td>
+                            <td class="table__text">Мультфильм, Фэнтези, Комедия</td>
                             <td class="table__icon"></td>
                         </tr>
                         <tr>
                             <td class="table__cell">16:00</td>
                             <td class="table__mid"><a href="https://www.kinopoisk.ru/film/693730/" title="kinopoisk: Люди в черном: Интернэшнл">Люди в черном: Интернэшнл</a></td>
-                            <td>Фантастика, Боевик, Комедия</td>
+                            <td class="table__text">Фантастика, Боевик, Комедия</td>
                             <td class="table__icon"></td>
                         </tr>
                     </tbody>
@@ -134,20 +143,24 @@
         </section>
         <!-- Блок с зеленой кнопкой и подарком -->
         <section>
-            <div>
-                <img src="/images/box_presents.png" alt="Подарок" title="подарок">
-            </div>
-            <div>
-                <h2>Подарок каждому!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima natus earum, quis harum aliquam!
-                     Odio quo rerum id optio, corporis laboriosam dolore recusandae ducimus! Eius, quidem cupiditate? Iste, earum!</p>
-            </div>
-            <form action="index.php" method="post">
-                    <p>Укажите Ваш E-mail(Можно ввести несколько E-mail):</p>   
-                    <p><input type="email" name="email" required multiple></p>
-                    <p><input type="submit" value="Отправить"></p>
-                <button type="button">Получить подарок</button>
-            </form> 
+            <div class="action__container">
+                <div class="action__box">
+                    <img src="/images/box_presents.png" alt="Подарок" title="подарок">
+                </div>
+                <div class="action__wrap">
+                    <h2>Подарок каждому!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima natus earum, quis harum aliquam!
+                        Odio quo rerum id optio, corporis laboriosam dolore recusandae ducimus! Eius, quidem cupiditate? Iste, earum!</p>
+                </div>
+                <div class="action__btn">
+                    <form action="index.php" method="post">
+                        <p>Укажите Ваш E-mail(Можно ввести несколько E-mail):</p>   
+                        <p><input type="email" name="email" required multiple></p>
+                        <p><input type="submit" value="Отправить"></p>
+                        <button type="button">Получить подарок</button>
+                </form>
+                </div>
+            </div> 
         </section>
         <!-- Каталог фильмов -->
         <section id="films">
@@ -156,7 +169,9 @@
         </section>
         <!-- Карта расположения -->
         <section>
-            maps
+            <div class="maps">
+                <p>Тут расположение кинотеатра</p>
+            </div>
         </section>
         <!-- Подвал сайта -->
         <footer id="contact">
