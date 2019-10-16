@@ -1,54 +1,3 @@
-/* Шрифты */
-@font-face {
-    font-family: "Roboto-Bold";
-    src: url(../fonts/Roboto-Bold.eot);
-    src: local(Roboto-Bold), local(Roboto-Bold),
-        url(../fonts/Roboto-Bold.eot?#iefix) format(embedded-opentype),
-        url(../fonts/Roboto-Bold.woff) format(woff),
-        url(../fonts/Roboto-Bold.ttf) format(truetype);
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Roboto-Light";
-    src: url(../fonts/Roboto-Light.eot);
-    src: local(Roboto-Light), local(Roboto-Light),
-        url(../fonts/Roboto-Light.eot?#iefix) format(embedded-opentype),
-        url(../fonts/Roboto-Light.woff) format(woff),
-        url(../fonts/Roboto-Light.ttf) format(truetype);
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Roboto-Black";
-    src: url(../fonts/Roboto-Black.eot);
-    src: local(Roboto-Black), local(Roboto-Black),
-        url(../fonts/Roboto-Black.eot?#iefix) format(embedded-opentype),
-        url(../fonts/Roboto-Black.woff) format(woff),
-        url(../fonts/Roboto-Black.ttf) format(truetype);
-    font-weight: 900;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Roboto-Regular";
-    src: url(../fonts/Roboto-Regular.eot);
-    src: local(Roboto-Regular), local(Roboto-Regular),
-        url(../fonts/Roboto-Regular.eot?#iefix) format(embedded-opentype),
-        url(../fonts/Roboto-Regular.woff) format(woff),
-        url(../fonts/Roboto-Regular.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Roboto-Thin";
-    src: url(../Roboto-Thin.eot);
-    src: local(Roboto-Thin), local(Roboto-Thin),
-        url(../Roboto-Thin.eot?#iefix) format(embedded-opentype),
-        url(../Roboto-Thin.woff) format(woff),
-        url(../Roboto-Thin.ttf) format(truetype);
-    font-weight: 100;
-    font-style: normal;
-}
 /* Общие стили */
 *{
     padding: 0px;
@@ -60,6 +9,7 @@
     box-sizing: inherit;
 }
 body{
+    font-family: 'Roboto', sans-serif;
     box-sizing:border-box;
     padding: 0px;
     margin: 0px  auto;
@@ -68,7 +18,7 @@ body{
 }
 li{
     display: inline;
-    padding-left: 43px;
+    padding-left: 25px;
 }
 a{
     text-decoration: none;
@@ -77,13 +27,11 @@ a{
 }
 a:hover{
     color: #90d23d;
-}
-li a{
-        
+    cursor:pointer;
 }
 h1{
     font-size: 80px;
-    font-family: "Roboto-Thin";
+    font-weight: 100;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center;
@@ -92,7 +40,7 @@ h1{
 }
 h2{
     font-size: 50px;
-    font-family: "Roboto-Bold";
+    font-weight: 700;
     color: rgb(255, 255, 255);
     line-height: 1.2; 
 }
@@ -100,7 +48,7 @@ th{
     padding: 19px 0;
     background-color: #a3cc40;
     font-size: 30px;
-    font-family: "Roboto-Black";
+    font-weight: 900;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center; 
@@ -113,7 +61,7 @@ tr:nth-child(even){
 }
 td{
     font-size: 22px;
-    font-family: "Roboto-Regular";
+    font-weight: 400;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center;
@@ -123,9 +71,13 @@ td{
 /* Шапка сайта, с логотипом,навигацией и блоком "Добро пожаловать */
 .head{
     background: url(../images/background_head.png) center  no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
     width: 100%;
-    height: 765px;
+    height: 768px;
+    /* height: calc(100vh + 10.5rem);
+    padding-top: 2.5rem;
+    margin-bottom: 3.9rem; */
+    /* position: relative; */
 }
 .head__container{
     max-width: 1030px;
@@ -135,6 +87,7 @@ td{
     display: inline-block;
     width: 20%;
     padding-top: 55px;
+    text-align: center;
 }
 .head__navigation{
     display: inline-block;
@@ -142,7 +95,7 @@ td{
     text-align: center;
     padding-top: 55px;
     font-size: 15px;
-    font-family: "Roboto-Thin";
+    font-weight: 100;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.2; 
@@ -153,7 +106,7 @@ td{
     text-align: center;
     padding-top: 55px;
     font-size: 15px;
-    font-family: "Roboto-Thin";
+    font-weight: 100;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.2;
@@ -164,7 +117,7 @@ td{
 }
 .head__subtitle{
     font-size: 50px;
-    font-family: "Roboto-Regular";
+    font-weight: 400;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center;
@@ -174,7 +127,7 @@ td{
     height: 267px;
     width: 515px;
     display: block;
-    margin-left: 752px;
+    margin-left: 682px;
     margin-top: -130px;
     background-color: white;
     padding: 10px;
@@ -182,19 +135,19 @@ td{
 .head__slogan{
     margin-top: 20px;
     font-size: 40px;
-    font-family: "Roboto-Bold";
+    font-weight: 700;
     color: rgb(37, 37, 37);
     line-height: 1.2;
-    text-align: center;
+    padding-left: 23px;
     padding-bottom:33px;
 }
 .head__text{
     font-size: 14px;
-    font-family: "Roboto-Light";
+    font-weight: 300;
     color: rgb(36, 36, 36);
     line-height: 1.2;
     padding-bottom: 15px;
-    padding-left: 30px;
+    padding-left: 23px;
     padding-right: 30px;
     text-align: left;  
 }
@@ -230,7 +183,7 @@ img[title="Удобные кресла"]{
 .advantages__subtitle h3{
     margin: 0px;
     font-size: 35px;
-    font-family: "Roboto-Black";
+    font-weight: 900;
     color: rgb(36, 36, 36);
     line-height: 1.2;
     text-align: center;
@@ -238,13 +191,16 @@ img[title="Удобные кресла"]{
 }
 .advantages__text p{
     margin: 0px;
-    font-family: "Roboto-Light";
+    font-weight: 300;
     font-size: 14px;
     line-height: 1.2;
     color: rgb(36, 36, 36);
     text-align: center;  
 }
 /* Блок с таблицой */
+.booking{
+    margin-bottom: 78px;
+}
 .container{
     max-width: 1030px;
     margin: 0 auto;
@@ -253,7 +209,7 @@ img[title="Удобные кресла"]{
     text-align: center;
     padding-bottom:80px;
     font-size: 50px;
-    font-family: "Roboto-Bold";
+    font-weight: 700;
     color: rgb(37, 37, 37);
     line-height: 1.2;
     margin: 0;   
@@ -292,21 +248,25 @@ img[title="Удобные кресла"]{
     margin: 0 auto;
     text-align: center;
     font-size: 14px;
-    font-family: "Roboto-Light";
+    font-weight: 300;
     color: rgb(36, 36, 36);
     line-height: 1.2;     
 }
 /* Блок с зеленой кнопкой и подарком */
+.action{
+    background: url(../images/background_action.png);
+    width: 100%;
+    height: 700px;
+    }
+.action__box{
+    margin-top: -50px;
+}    
 .action__container{
     max-width: 1030px;
     margin: 0 auto;
 }
-.action__box{
 
-}
-.action__wrap{
-background: url;
-}
+
 /* Каталог фильмов */
 
 /*  Карта расположения  */
