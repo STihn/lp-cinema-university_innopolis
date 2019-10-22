@@ -25,7 +25,8 @@ a{
     outline: none;
     color: #ffffff;
 }
-a:hover{
+li a:hover{
+    border-bottom: 1px solid white;
     color: #90d23d;
     cursor:pointer;
 }
@@ -156,6 +157,10 @@ button{
     text-transform: uppercase;
     line-height: 1.2;
 }
+.head__city a:hover{
+    border-bottom: 1px solid white;
+    cursor:pointer;
+}
 .head__list{
     color: white;
 }
@@ -231,6 +236,12 @@ button{
     height: 211px;
     border: 1px solid red;
 }
+.advantages__image img{
+    transition: 1s;
+}
+.advantages__image img:hover{
+    transform: scale(1.1);
+}
 img[title="Удобные кресла"]{
     padding-top: 23px;
     padding-left: 70px;
@@ -279,6 +290,9 @@ img[title="Удобные кресла"]{
 }
 .table__item::after{
     content: "▼"
+}
+.table__item a:hover{
+    color: #5e9916;
 }
 .table__cell{
     width: 250px;
@@ -465,6 +479,8 @@ img[title="Удобные кресла"]{
 }
 .footer__icon img{
     padding-right: 7px;
+    /* box-shadow: 0px 1px 1px 0px black; */
 }
 
+  
 /* Медиа плавила(медиа-запросы) */
