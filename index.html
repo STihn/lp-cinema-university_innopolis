@@ -33,26 +33,28 @@
                         <span class="head__list">Ваш город:</span>
                         <a href="#">Москва</a>
                     </div>
+                    <div style="clear: both;"></div>
                     <h1>Закажите билет в кино</h1>
                     <p class="head__subtitle">Всем покупателям подарок!</p>
                 </div>   
             </div>
-            <div class="head__desc">
+            <div class="head__wrap">
+                <div class="head__desc">
                     <p class="head__slogan">Добро пожаловать!</p>
                     <p class="head__text">Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere
                             minima optio perferendis quibusdam quis reprehenderit, saepe! </p>
                     <p class="head__text">Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere
                             minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</p>
+                </div>
             </div>
         </header>
         <!-- Блок "Почему Мы" с 3 картинками  -->
         <section>
-            <div id="advantages">
-                <div class="advantages__head">
-                        <h2>Почему мы?</h2>
-                </div>
-                <div></div>
+            <div id="advantages" class="advantages">
                 <div class="advantages__main">
+                    <div class="advantages__head">
+                        <h2>Почему мы?</h2>
+                    </div>
                     <div class="advantages__block">
                         <div class="advantages__image">
                             <img src="/images/icon_1.png" alt="Большие экраны" title="Большие экраны">
@@ -145,43 +147,113 @@
         <!-- Блок с зеленой кнопкой и подарком -->
         <section>
             <div class="action">
-                <div class="action__box">
-                    <img src="/images/box_presents.png" alt="Подарок" title="подарок">
-                </div>
-                <div class="action__container">    
-                    <div class="action__wrap">
-                        <h2>Подарок каждому!</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima natus earum, quis harum aliquam!
-                            Odio quo rerum id optio, corporis laboriosam dolore recusandae ducimus! Eius, quidem cupiditate? Iste, earum!</p>
+                <div class="action__holder">
+                    <div class="action__box">
+                        <img src="/images/box_presents.png" alt="Подарок" title="подарок"/>
                     </div>
-                    <div class="action__btn">
-                        <form action="index.php" method="post">
-                            <p>Укажите Ваш E-mail(Можно ввести несколько E-mail):</p>   
-                            <p><input type="email" name="email" required multiple></p>
-                            <p><input type="submit" value="Отправить"></p>
-                            <button type="button">Получить подарок</button>
-                        </form>
+                </div>
+                <div class="action__wrap">
+                    <div class="action__container"> 
+                        <div class="action__content">
+                            <h2>Подарок каждому!</h2>
+                            <div class="action__text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima natus earum, quis harum aliquam!
+                                Odio quo rerum id optio, corporis laboriosam dolore recusandae ducimus! Eius, quidem cupiditate? Iste, earum!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima natus earum, quis harum aliquam!
+                                Odio quo rerum id optio, corporis laboriosam dolore recusandae ducimus! Eius, quidem cupiditate? Iste, earum!</p>
+                            </div>
+                            <div class="action__btn">
+                                <form action="index.php" method="post">
+                                    <p>Укажите Ваш E-mail ( Можно ввести несколько E-mail ):</p>   
+                                    <p><input type="email" name="email" required multiple></p>
+                                    <p><input type="submit" value="Заказать"></p>
+                                    <button type="button">Получить подарок</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div> 
         </section>
         <!-- Каталог фильмов -->
-        <section id="films">
-            <div class="films">
-                <h2>Фильмы</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ratione laborum magni.</p>
+        <section>
+            <div id="films" class="films">
+                <div class="films__container">
+                    <h2>Фильмы</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Veniam necessitatibus assumenda soluta expedita sunt esse animi consectetur neque saepe recusandae! 
+                        Eligendi nam ipsum dolorem enim a illo laborum culpa laboriosam.</p>
+                    <div class="films__wrap">
+                        <div class="films__main">
+                            <div class="films__spider-man">
+                                <!-- <p>Человек-паук</p>
+                                <svg width="83px" height="6px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+                                </svg>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, iure!</p> -->
+                            </div>
+                            <div class="films__dog-health">
+                                <!-- <p>Собачья-жизнь 2</p> -->
+                            </div>
+                            <div class="films__people-black">
+                                
+                            </div>
+                        </div>
+                        <div class="films__main">
+                                <div class="films__spider-man">
+                                    <!-- <p>Человек-паук</p>
+                                    <svg width="83px" height="6px">
+                                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+                                    </svg>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, iure!</p> -->
+                                </div>
+                                <div class="films__dog-health">
+                                    <!-- <p>Собачья-жизнь 2</p> -->
+                                </div>
+                                <div class="films__people-black">
+                                    
+                                </div>
+                        </div>
+                        <div class="films__main">
+                                <div class="films__spider-man">
+                                    <!-- <p>Человек-паук</p>
+                                    <svg width="83px" height="6px">
+                                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+                                    </svg>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, iure!</p> -->
+                                </div>
+                                <div class="films__dog-health">
+                                    <!-- <p>Собачья-жизнь 2</p> -->
+                                </div>
+                                <div class="films__people-black">
+                                    
+                                </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Карта расположения -->
         <section>
             <div class="maps">
-                <p>Тут расположение кинотеатра</p>
+                <a href="https://placeholder.com"><img src="https://via.placeholder.com/1349x450.png"></a>
             </div>
         </section>
         <!-- Подвал сайта -->
-        <footer id="contact">
-            <div>icon</div>
-            <span>Hope we see you at the event! All Rights Reserved. Envato Bangladesh</span>
+        <footer >
+            <div id="contact" class="footer">
+                <div class="footer__wrap">
+                    <div class="footer__inner">
+                        <div class="footer__icon"><img src="/images/footer-facebook.svg"></div>
+                        <div class="footer__icon"><img src="/images/footer-twitter.svg"></div>
+                        <div class="footer__icon"><img src="/images/footer-linkedin.svg"></div>
+                        <div class="footer__icon"><img src="/images/footer-google-plus.svg"></div>
+                        <div class="footer__icon"><img src="/images/footer-tumblr.svg"></div>
+                    </div>
+                    <p>Hope we see you at the event! All Rights Reserved. Envato Bangladesh</p>
+                    <p>Hope we see you at the event! All Rights Reserved. Envato Bangladesh</p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
