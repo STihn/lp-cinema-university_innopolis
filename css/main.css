@@ -26,7 +26,7 @@ a{
     color: #ffffff;
 }
 li a:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #90d23d;
     color: #90d23d;
     cursor:pointer;
 }
@@ -53,13 +53,7 @@ th{
     line-height: 1.2;
     text-align: center; 
 }
-tr:nth-child(odd){
-    background-color: #373737;
-}
-tr:nth-child(even){
-    background-color: #4b4d4f;
-}
-td{
+/* td{
     font-size: 22px;
     font-weight: 400;
     color: rgb(255, 255, 255);
@@ -67,7 +61,7 @@ td{
     text-align: center;
     vertical-align: top;
     padding: 25px 0;
-}
+} */
 input[type="email"]{
     border-radius: 5px;
     padding: 0 10px;
@@ -158,7 +152,7 @@ button{
     line-height: 1.2;
 }
 .head__city a:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #90d23d;
     cursor:pointer;
 }
 .head__list{
@@ -209,7 +203,7 @@ button{
 }
 /* Блок "Почему Мы" с 3 картинками */
 .advantages{
-    margin-bottom: 105px;
+    margin-bottom: 110px;
 }
 .advantages__main{
     max-width: 1030px;
@@ -219,9 +213,13 @@ button{
 .advantages__block{
     float:left;
     /* display: inline-block; */
-    width: 33%;
+    width: 32%;
+    margin-right: 20px;
     text-align: center;
-    vertical-align: top;    
+    vertical-align: top;  
+}
+.advantages__block:last-child{
+    margin-right: 0px;
 }
 .advantages__head{
     margin-top: -10px;
@@ -232,9 +230,8 @@ button{
     text-align: left;
 }
 .advantages__image{
-    margin-bottom: 40px; 
+    margin-bottom: 35px; 
     height: 211px;
-    border: 1px solid red;
 }
 .advantages__image img{
     transition: 1s;
@@ -242,17 +239,22 @@ button{
 .advantages__image img:hover{
     transform: scale(1.1);
 }
+img[title="Большие экраны"]{
+padding-right: 35px;
+}
+img[title="Объемный звук"]{
+    padding-left: 40px;
+}
 img[title="Удобные кресла"]{
     padding-top: 23px;
-    padding-left: 70px;
+    padding-left: 45px;
 }
 .advantages__subtitle h3{  
     font-size: 35px;
     font-weight: 900;
     color: rgb(36, 36, 36);
     text-align: center;
-    padding-bottom: 20px; 
-    border: 1px solid red; 
+    padding-bottom: 15px;
 }
 .advantages__text p{
     font-weight: 300;
@@ -260,11 +262,10 @@ img[title="Удобные кресла"]{
     line-height: 1.2;
     color: rgb(36, 36, 36);
     text-align: center;
-    border: 1px solid red;  
 }
 /* Блок с таблицой */
 .booking{
-    margin-bottom: 150px;
+    margin-bottom: 145px;
 }
 .container{
     max-width: 1030px;
@@ -272,7 +273,7 @@ img[title="Удобные кресла"]{
 }
 .booking__header h2{
     text-align: center;
-    padding-bottom:73px;
+    padding-bottom:78px;
     font-weight: 700;
     color: rgb(37, 37, 37);
     line-height: 1.2;   
@@ -285,6 +286,12 @@ img[title="Удобные кресла"]{
     color:#ffffff;
     margin-bottom:40px;   
 }
+.table__row:nth-child(odd){
+        background-color: #373737;
+}
+.table__row:nth-child(even){
+        background-color: #4b4d4f;
+}
 .table__item{
     content: "▼"  
 }
@@ -296,13 +303,32 @@ img[title="Удобные кресла"]{
 }
 .table__cell{
     width: 250px;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    vertical-align: top;
+    padding: 25px 0;
 }
 .table__mid{
     width: 315px;
     text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    vertical-align: top;
+    padding: 25px 0;
 }
 .table__text{
     text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    vertical-align: top;
+    padding: 25px 0;
 }
  .table__icon{ /*кнопки плюсики */
     background: url(../images/More-icon.png) no-repeat  center;
@@ -320,7 +346,7 @@ img[title="Удобные кресла"]{
 }
 /* Блок с зеленой кнопкой и подарком */
 .action{
-    margin-bottom: 115px;
+    margin-bottom: 82px;
 }
 .action__holder{
     position: relative;
@@ -359,14 +385,14 @@ img[title="Удобные кресла"]{
     margin: 0 auto;
 }
 .action__box{
-    margin-top: -70px;
+    margin-top: -65px;
     position: absolute;
     display: block;
     left:160px;
     z-index: 4;
 }
 .action__content{
-    padding-top: 100px;
+    padding-top: 138px;
     text-align: right;
 }
 .action__content h2{
@@ -374,7 +400,7 @@ img[title="Удобные кресла"]{
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: right;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 .action__text{
     margin-bottom: 20px;
@@ -402,9 +428,6 @@ img[title="Удобные кресла"]{
     max-width: 1030px;
     margin: 0 auto;   
 }
-.films__wrap{
-    margin-bottom: 100px;
-}
 .films h2{
     font-size: 50px;
     color: rgb(37, 37, 37);
@@ -412,49 +435,49 @@ img[title="Удобные кресла"]{
     line-height: 1.2;
     text-align: left;
     padding-left: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 43px;
 }
 .films p{
     font-size: 14px;
     font-weight: 300;
     color: rgb(36, 36, 36);
-    line-height: 1.2;
     text-align: left;
     padding-left: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
+    width: 700px;
 }
-.films__main{
-    padding-left: 30px;
-    margin-bottom: 40px;
+.films__wrap{
+    margin-bottom: 65px;
+}
+.films__table{
+    width: 100%;
+    text-align: center;
 }
 .films__spider-man{
-    background: url(../images/spider-man.png) center no-repeat;
     width: 300px;
     height: 300px;
-    display: inline-block;
-    margin-right: 30px;
-    z-index: 2;   
-}
-.films__spider-man:hover{
-    background-color: #89bf48;
-    z-index: 2;
+    padding-left: 10px;
+    padding-bottom: 40px;
 }
 .films__dog-health{
-    background: url(../images/dog.png) center no-repeat;
     width: 300px;
     height: 300px;
-    display: inline-block;
-    margin-right: 30px;   
+    padding-bottom: 40px;
 }
 .films__people-black{
-    background: url(../images/people-black.png) center no-repeat;
     width: 300px;
     height: 300px;
-    display: inline-block;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+.films__popup{
+    background-color: rgb(144, 210, 61);
+    width: 300px;
+    height: 300px;
 }
 /*  Карта расположения  */
 .maps{
-   
+   margin:0 auto;
 }
 /* Подвал сайта */
 .footer{
@@ -466,7 +489,7 @@ img[title="Удобные кресла"]{
     margin: 0 auto;
 }
 .footer__inner{
-    padding-left: 380px;
+    padding-left: 370px;
 }
 .footer__wrap p {
     text-align: center;
@@ -479,8 +502,11 @@ img[title="Удобные кресла"]{
 }
 .footer__icon img{
     padding-right: 7px;
-    /* box-shadow: 0px 1px 1px 0px black; */
+    border-radius: 50px;
+    box-shadow: inset 1px 1px 6px -3px rgba(0, 0, 0, 0.25);
 }
-
+.footer__icon img:hover{
+    box-shadow: initial;
+}
   
-/* Медиа плавила(медиа-запросы) */
+/* Медиа правила(медиа-запросы) */
