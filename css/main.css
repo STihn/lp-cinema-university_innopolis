@@ -435,15 +435,8 @@ button {
     margin-bottom: 65px;
 }
 .films__table {
-    width: 100%;
-}
-.films__row {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 35px; 
-}
-.films__row:last-child {
-    margin-bottom: initial; 
+    justify-content: space-between;
 }
 .films__spider-man {
     position: relative;
@@ -506,9 +499,36 @@ button {
     padding-left: 25px;
 }
 .films__pic {
-    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
 }
-
+.films__pic img {
+    width: 30px;
+    height: 30px;
+}
+.owl-nav {
+    position: relative;
+    top: -180px;
+}
+.owl-prev {
+    position: absolute;
+    left: -80px;
+}
+.owl-prev span{
+    background-color:rgb(144, 210, 61);
+    border-radius: 20%; 
+    padding: 15px;
+}
+.owl-next {
+    position: absolute;
+    right: -40px;
+}
+.owl-next span {
+    border-radius: 20%; 
+    padding: 15px;
+    background-color: rgb(144, 210, 61);
+}
 /*  Карта расположения  */
 .maps {
    margin:0 auto;

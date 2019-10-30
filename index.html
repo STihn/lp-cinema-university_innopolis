@@ -8,6 +8,9 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
     </head>
     <body>
         <!-- Шапка сайта, с логотипом,навигацией и блоком "Добро пожаловать" -->
@@ -116,27 +119,27 @@
                     </thead>
                     <tbody>
                         <tr class="table__row">
-                            <td class="table__cell">10:00</td>
-                            <td class="table__mid"><a href="https://www.kinopoisk.ru/film/838/" title="kinopoisk: Человек-паук">Человек-паук</a></td>
-                            <td class="table__text">Фантастика, Боевик, Приключения</td>
+                             <td id="start_film_1" class="table__cell"><!--10:00--></td> 
+                            <td id="name_film_1" class="table__mid"><a href="https://www.kinopoisk.ru/film/838/" title="kinopoisk: Человек-паук"><!--Человек-паук--></a></td>
+                            <td id="ganar_film_1" class="table__text"><!--Фантастика, Боевик, Приключения--></td>
                             <td class="table__icon"></td>
                         </tr>
                         <tr class="table__row">
-                            <td class="table__cell">12:00</td>
-                            <td class="table__mid"><a href="https://www.kinopoisk.ru/film/1122114/" title="kinopoisk: Собачья жизнь 2">Собачья жизнь 2</a></td>
-                            <td class="table__text">Фэнтези, Драма, Комедия</td>
+                            <td id="start_film_2" class="table__cell"><!--12:00--></td>
+                            <td id="name_film_2" class="table__mid"><a href="https://www.kinopoisk.ru/film/1122114/" title="kinopoisk: Собачья жизнь 2"><!--Собачья жизнь 2--></a></td>
+                            <td id="ganar_film_2" class="table__text"><!--Фэнтези, Драма, Комедия--></td>
                             <td class="table__icon"></td>
                         </tr>
                         <tr class="table__row">
-                            <td class="table__cell">14:00</td>
-                            <td class="table__mid"><a href="https://www.kinopoisk.ru/film/846824/" title="kinopoisk: История игрушек 4">История игрушек 4</a></td>
-                            <td class="table__text">Мультфильм, Фэнтези, Комедия</td>
+                            <td id="start_film_3" class="table__cell"><!--14:00--></td>
+                            <td id="name_film_3" class="table__mid"><a href="https://www.kinopoisk.ru/film/846824/" title="kinopoisk: История игрушек 4"><!--История игрушек 4--></a></td>
+                            <td  id="ganar_film_3" class="table__text"><!--Мультфильм, Фэнтези, Комедия--></td>
                             <td class="table__icon"></td>
                         </tr>
                         <tr class="table__row">
-                            <td class="table__cell">16:00</td>
-                            <td class="table__mid"><a href="https://www.kinopoisk.ru/film/693730/" title="kinopoisk: Люди в черном: Интернэшнл">Люди в черном: Интернэшнл</a></td>
-                            <td class="table__text">Фантастика, Боевик, Комедия</td>
+                            <td  id="start_film_4" class="table__cell"><!--16:00--></td>
+                            <td  id="name_film_4" class="table__mid"><a href="https://www.kinopoisk.ru/film/693730/" title="kinopoisk: Люди в черном: Интернэшнл"><!--Люди в черном: Интернэшнл--></a></td>
+                            <td  id="ganar_film_4" class="table__text"><!--Фантастика, Боевик, Комедия--></td>
                             <td class="table__icon"></td>
                         </tr>
                     </tbody>
@@ -187,157 +190,151 @@
                     <p class="films__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                         Veniam necessitatibus assumenda soluta expedita sunt esse animi consectetur neque saepe recusandae!</p>
                     <div class="films__wrap">
-                        <div class="films__table">
-                            <div class="films__row">
-                                <div class="films__spider-man">
-                                    <img src="/images/spider-man.png">
-                                    <div class="films__popup">
-                                        <p class="films__title">Человек-паук</p>
-                                        <svg class="films__svg" width="83px" height="6px">
-                                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
-                                        </svg>
-                                        <p class="films__description">Lorem ipsum dolor sit amet.</p>
-                                        <div class="films__pic">
-                                            <img src="/images/facebook.svg">
-                                            <img src="/images/twitter.svg">
-                                            <img src="/images/behance.svg">
-                                            <img src="/images/dribbble.svg">
-                                        </div> 
-                                    </div>
+                        <div class="films__table owl-carousel">
+                            <div class="films__spider-man">
+                                <img src="/images/spider-man.png">
+                                <div class="films__popup">
+                                    <p class="films__title">Человек-паук</p>
+                                    <svg class="films__svg" width="83px" height="6px">
+                                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+                                    </svg>
+                                    <p class="films__description">Lorem ipsum dolor sit amet.</p>
+                                    <div class="films__pic">
+                                        <img src="/images/facebook.svg">
+                                        <img src="/images/twitter.svg">
+                                        <img src="/images/behance.svg">
+                                        <img src="/images/dribbble.svg">
+                                    </div> 
                                 </div>
-                                <div class="films__dog-health">
-                                    <img src="/images/dog.png">
-                                    <div class="films__popup">
-                                        <p class="films__title">Собачья-жизнь 2</p>
-                                        <svg class="films__svg" width="83px" height="6px">
-                                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
-                                        </svg>
-                                            <p class="films__description">Lorem ipsum dolor sit amet.</p>
-                                            <div class="films__pic">
-                                                <img src="/images/facebook.svg">
-                                                <img src="/images/twitter.svg">
-                                                <img src="/images/behance.svg">
-                                                <img src="/images/dribbble.svg">
-                                            </div> 
-                                        </div>
-                                    </div>
-                                <div class="films__people-black">
-                                    <img src="/images/people-black.png">
-                                    <div class="films__popup">
-                                            <p class="films__title">Люди в черном</p>
-                                            <svg class="films__svg" width="83px" height="6px">
-                                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
-                                            </svg>
-                                            <p class="films__description">Lorem ipsum dolor sit amet.</p>
-                                            <div class="films__pic">
-                                                <img src="/images/facebook.svg">
-                                                <img src="/images/twitter.svg">
-                                                <img src="/images/behance.svg">
-                                                <img src="/images/dribbble.svg">
-                                            </div> 
-                                        </div>
-                                    </div>
                             </div>
-                            <div class="films__row">
-                                    <div class="films__spider-man">
-                                        <img src="/images/spider-man.png">
-                                        <div class="films__popup">
-                                            <p class="films__title">Человек-паук</p>
-                                            <svg class="films__svg" width="83px" height="6px">
-                                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
-                                            </svg>
-                                            <p class="films__description">Lorem ipsum dolor sit amet.</p>
-                                            <div class="films__pic">
-                                                <img src="/images/facebook.svg">
-                                                <img src="/images/twitter.svg">
-                                                <img src="/images/behance.svg">
-                                                <img src="/images/dribbble.svg">
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div class="films__dog-health">
-                                        <img src="/images/dog.png">
-                                        <div class="films__popup">
-                                                <p class="films__title">Собачья-жизнь 2</p>
-                                                <svg class="films__svg" width="83px" height="6px">
-                                                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
-                                                </svg>
-                                                <p class="films__description">Lorem ipsum dolor sit amet.</p>
-                                                <div class="films__pic">
-                                                    <img src="/images/facebook.svg">
-                                                    <img src="/images/twitter.svg">
-                                                    <img src="/images/behance.svg">
-                                                    <img src="/images/dribbble.svg">
-                                                </div> 
-                                            </div>
-                                    </div>
-                                    <div class="films__people-black">
-                                        <img src="/images/people-black.png">
-                                        <div class="films__popup">
-                                                <p class="films__title">Люди в черном</p>
-                                                <svg class="films__svg" width="83px" height="6px">
-                                                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
-                                                </svg>
-                                                <p class="films__description">Lorem ipsum dolor sit amet.</p>
-                                                <div class="films__pic">
-                                                    <img src="/images/facebook.svg">
-                                                    <img src="/images/twitter.svg">
-                                                    <img src="/images/behance.svg">
-                                                    <img src="/images/dribbble.svg">
-                                                </div> 
-                                            </div>
-                                    </div>
+                            <div class="films__dog-health">
+                                <img src="/images/dog.png">
+                                <div class="films__popup">
+                                    <p class="films__title">Собачья-жизнь 2</p>
+                                    <svg class="films__svg" width="83px" height="6px">
+                                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+                                    </svg>
+                                    <p class="films__description">Lorem ipsum dolor sit amet.</p>
+                                    <div class="films__pic">
+                                        <img src="/images/facebook.svg">
+                                        <img src="/images/twitter.svg">
+                                        <img src="/images/behance.svg">
+                                        <img src="/images/dribbble.svg">
+                                    </div> 
                                 </div>
-                                <div class="films__row">
-                                    <div class="films__spider-man">
-                                        <img src="/images/spider-man.png">
-                                        <div class="films__popup">
-                                            <p class="films__title">Человек-паук</p>
-                                            <svg class="films__svg" width="83px" height="6px">
-                                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
-                                            </svg>
-                                            <p class="films__description">Lorem ipsum dolor sit amet.</p>
-                                            <div class="films__pic">
-                                                <img src="/images/facebook.svg">
-                                                <img src="/images/twitter.svg">
-                                                <img src="/images/behance.svg">
-                                                <img src="/images/dribbble.svg">
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div class="films__dog-health">
-                                        <img src="/images/dog.png">
-                                        <div class="films__popup">
-                                                <p class="films__title">Собачья-жизнь 2</p>
-                                                <svg class="films__svg" width="83px" height="6px">
-                                                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
-                                                </svg>
-                                                <p class="films__description">Lorem ipsum dolor sit amet.</p>
-                                                <div class="films__pic">
-                                                    <img src="/images/facebook.svg">
-                                                    <img src="/images/twitter.svg">
-                                                    <img src="/images/behance.svg">
-                                                    <img src="/images/dribbble.svg">
-                                                </div> 
-                                            </div>
-                                    </div>
-                                    <div class="films__people-black">
-                                        <img src="/images/people-black.png">
-                                        <div class="films__popup">
-                                                <p class="films__title">Люди в черном</p>
-                                                <svg class="films__svg" width="83px" height="6px">
-                                                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
-                                                </svg>
-                                                <p class="films__description">Lorem ipsum dolor sit amet.</p>
-                                                <div class="films__pic">
-                                                    <img src="/images/facebook.svg">
-                                                    <img src="/images/twitter.svg">
-                                                    <img src="/images/behance.svg">
-                                                    <img src="/images/dribbble.svg">
-                                                </div> 
-                                            </div>
-                                    </div>
+                            </div>
+                            <div class="films__people-black">
+                                <img src="/images/people-black.png">
+                                <div class="films__popup">
+                                    <p class="films__title">Люди в черном</p>
+                                    <svg class="films__svg" width="83px" height="6px">
+                                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+                                    </svg>
+                                    <p class="films__description">Lorem ipsum dolor sit amet.</p>
+                                    <div class="films__pic">
+                                        <img src="/images/facebook.svg">
+                                        <img src="/images/twitter.svg">
+                                        <img src="/images/behance.svg">
+                                        <img src="/images/dribbble.svg">
+                                    </div> 
                                 </div>
+                            </div>
+                            <div class="films__spider-man">
+                                <img src="/images/spider-man.png">
+                                <div class="films__popup">
+                                    <p class="films__title">Человек-паук</p>
+                                    <svg class="films__svg" width="83px" height="6px">
+                                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+                                    </svg>
+                                    <p class="films__description">Lorem ipsum dolor sit amet.</p>
+                                    <div class="films__pic">
+                                        <img src="/images/facebook.svg">
+                                        <img src="/images/twitter.svg">
+                                        <img src="/images/behance.svg">
+                                        <img src="/images/dribbble.svg">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="films__dog-health">
+                                <img src="/images/dog.png">
+                                <div class="films__popup">
+                                    <p class="films__title">Собачья-жизнь 2</p>
+                                    <svg class="films__svg" width="83px" height="6px">
+                                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+                                    </svg>
+                                    <p class="films__description">Lorem ipsum dolor sit amet.</p>
+                                    <div class="films__pic">
+                                        <img src="/images/facebook.svg">
+                                        <img src="/images/twitter.svg">
+                                        <img src="/images/behance.svg">
+                                        <img src="/images/dribbble.svg">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="films__people-black">
+                                <img src="/images/people-black.png">
+                                <div class="films__popup">
+                                    <p class="films__title">Люди в черном</p>
+                                    <svg class="films__svg" width="83px" height="6px">
+                                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+                                    </svg>
+                                    <p class="films__description">Lorem ipsum dolor sit amet.</p>
+                                    <div class="films__pic">
+                                        <img src="/images/facebook.svg">
+                                        <img src="/images/twitter.svg">
+                                        <img src="/images/behance.svg">
+                                        <img src="/images/dribbble.svg">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="films__spider-man">
+                                <img src="/images/spider-man.png">
+                                <div class="films__popup">
+                                    <p class="films__title">Человек-паук</p>
+                                    <svg class="films__svg" width="83px" height="6px">
+                                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+                                    </svg>
+                                    <p class="films__description">Lorem ipsum dolor sit amet.</p>
+                                    <div class="films__pic">
+                                        <img src="/images/facebook.svg">
+                                        <img src="/images/twitter.svg">
+                                        <img src="/images/behance.svg">
+                                        <img src="/images/dribbble.svg">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="films__dog-health">
+                                <img src="/images/dog.png">
+                                <div class="films__popup">
+                                    <p class="films__title">Собачья-жизнь 2</p>
+                                    <svg class="films__svg" width="83px" height="6px">
+                                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+                                    </svg>
+                                    <p class="films__description">Lorem ipsum dolor sit amet.</p>
+                                    <div class="films__pic">
+                                        <img src="/images/facebook.svg">
+                                        <img src="/images/twitter.svg">
+                                        <img src="/images/behance.svg">
+                                        <img src="/images/dribbble.svg">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="films__people-black">
+                                <img src="/images/people-black.png">
+                                <div class="films__popup">
+                                    <p class="films__title">Люди в черном</p>
+                                    <svg class="films__svg" width="83px" height="6px">
+                                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L83.000,-0.000 L83.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+                                    </svg>
+                                    <p class="films__description">Lorem ipsum dolor sit amet.</p>
+                                    <div class="films__pic">
+                                        <img src="/images/facebook.svg">
+                                        <img src="/images/twitter.svg">
+                                        <img src="/images/behance.svg">
+                                        <img src="/images/dribbble.svg">
+                                    </div> 
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -365,5 +362,26 @@
                 </div>
             </div>
         </footer>
+        <script src="js/films.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    // responsive:{
+    //     0:{
+    //         items:1
+    //     },
+    //     600:{
+    //         items:3
+    //     },
+    //     1000:{
+    //         items:5
+    //     }
+    // }
+})
+        </script>
     </body>
 </html>
