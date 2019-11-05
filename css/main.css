@@ -120,7 +120,7 @@ button {
     max-width: 1030px;
     margin: 0 auto;
 }
-.head__main  .head__clear-both {
+.head__clear-both {
     clear: both;   
 }
 .head__logo {
@@ -227,8 +227,8 @@ button {
 .advantages__image {
     margin-bottom: 35px; 
     height: 215px;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
+    align-items: flex-end;
 }
 .advantages__image img {
     transition: 1s;
@@ -501,7 +501,8 @@ button {
 .films__pic {
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    padding: 20px;
+    width: 50%;
 }
 .films__pic img {
     width: 30px;
@@ -531,7 +532,7 @@ button {
 }
 /*  Карта расположения  */
 .maps {
-   margin:0 auto;
+   text-align: center;
 }
 /* Подвал сайта */
 .footer {
