@@ -437,24 +437,28 @@ button {
 .films__table {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .films__spider-man {
     position: relative;
     width: 296px;
     height: 296px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 .films__dog-health {
     position: relative;
     width: 296px;
     height: 296px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 .films__people-black {
     position: relative;
     width: 296px;
     height: 296px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 .films__popup {
     position: absolute;
@@ -528,7 +532,7 @@ button {
 .owl-next span {
     border-radius: 20%; 
     padding: 15px;
-    background-color: rgb(144, 210, 61);
+    background-color: rgb(144, 210, 61); 
 }
 /*  Карта расположения  */
 .maps {
