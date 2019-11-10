@@ -509,7 +509,7 @@ button {
     width: 50%;
 }
 .films__pic img {
-    width: 30px;
+    width: 30px !important;
     height: 30px;
 }
 .owl-nav {
