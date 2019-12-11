@@ -12,25 +12,21 @@ const films = [
 for (let i = 0; i < films.length; i++) {
     // get indexes 
     const ganres_indexes  = films[i][2].split('/');
-    //console.log(ganres_indexes)
     let film_ganre = ''
 
     for (let j = 0; j < ganres_indexes.length; j++) {
         film_ganre += ganres[ganres_indexes[j]]
-           // console.log(ganres[ganres_indexes[j]])
-        if (j < ganres_indexes.length-1) {
-            //console.log(film_ganre)
-            film_ganre += ', '
-            //console.log(film_ganre)
-        }
+            if (j < ganres_indexes.length-1) {
+                film_ganre += ', '
+            }
     }
     
     // get the elements
     const element_start_film = document.getElementById('start_film_'+(i+1))
     const element_name_film = document.getElementById('name_film_'+(i+1))
     const element_ganre_film = document.getElementById('ganar_film_'+(i+1))
+    
     // add values
-
     element_start_film.innerHTML = films[i][0]
     element_name_film.innerHTML = films[i][1]
     element_ganre_film.innerHTML = film_ganre
