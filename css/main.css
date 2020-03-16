@@ -8,6 +8,10 @@
 *:before, *:after {
     box-sizing: inherit;
 }
+html {
+    font-size: 20px;
+    /* font-size: 1.46vw; */
+}
 body {
     font-family: 'Roboto', sans-serif;
     box-sizing:border-box;
@@ -15,10 +19,12 @@ body {
     margin: 0px  auto;
     outline: 0;
     text-decoration: none;
+    min-width: 320px;
+    -webkit-text-size-adjust: 100%;
 }
 li {
     display: inline;
-    padding-left: 25px;
+    padding-left: 1.25rem;
 }
 a {
     text-decoration: none;
@@ -31,58 +37,38 @@ li a:hover {
     cursor:pointer;
 }
 h1 {
-    font-size: 80px;
+    font-size: 4rem;
     font-weight: 100;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center; 
-    margin-top: 160px;  
+    margin-top: 8rem;  
 }
 h2 {
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: rgb(255, 255, 255);
     line-height: 1.2; 
 }
 th {
-    padding: 19px 0;
+    padding: 0.95rem 0;
     background-color: #a3cc40;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 900;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center; 
 }
 td {
-    font-size: 22px;
+    font-size: 1.1rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center;
     vertical-align: top;
-    padding: 25px 0;
+    padding: 1.25rem 0;
 }
-input[type="email"] {
-    border-radius: 5px;
-    padding: 0 10px;
-    margin-bottom: 10px;
-    height: 30px;
-    width: 240px;
-}
-input[type="submit"] {
-    border-radius: 15px;
-    background-color: rgb(144, 210, 61);
-    height: 55px;
-    padding: 0 25px;
-    border:0px;
-    font-size: 18px;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    text-align: center;
-    margin-bottom: 10px;
-}
-button {
+/* button {
     border-radius: 15px;
     background-color: rgb(144, 210, 61);
     height: 55px;
@@ -93,10 +79,11 @@ button {
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center;
-}
+} */
 /* Сетка макета */
 .container {
-    max-width: 1030px;
+    max-width: 51.5rem;
+    /* max-width: 1030px; */
     margin: 0 auto;
 }
 /* Шапка сайта, с логотипом,навигацией и блоком "Добро пожаловать */
@@ -112,17 +99,26 @@ button {
     overflow: hidden;
 }
 .head:after {
-    content: "";
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-top: 13vh solid transparent;
+    border-right: 200vh solid #fff;
+    border-bottom: 0px solid #fff;
+    position: absolute;
+    bottom: 0vh;
+    /* content: "";
     position: absolute;
     width: 120%;
     height: 180px;
     background-color: white;
     bottom: -80px;
     left:0;
-    transform: skewY(-5deg);
+    transform: skewY(-5deg); */
 }
 .head__container {
-    max-width: 1030px;
+    max-width: 51.5rem;
     margin: 0 auto;
 }
 .head__clear-both {
@@ -131,15 +127,21 @@ button {
 .head__logo {
     float: left;
     width: 20%;
-    padding-top: 5px;
+    padding-top: 0.25rem;
     text-align: left;
+}
+.head__logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
 }
 .head__navigation {
     float:left;
     width: 60%;
     text-align: center;
-    padding-top: 23px;
-    font-size: 15px;
+    padding-top: 1.15rem;
+    font-size: 0.75rem;
     font-weight: 100;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -149,8 +151,8 @@ button {
     float:left;
     width: 19%;
     text-align: center;
-    padding-top: 23px;
-    font-size: 15px;
+    padding-top: 1.15rem;
+    font-size: 0.75rem;
     font-weight: 100;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -164,7 +166,7 @@ button {
     color: white;
 }
 .head__subtitle {
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
     line-height: 1.2;
@@ -172,24 +174,24 @@ button {
 }
 .head__wrap {
     position: relative;
-    max-width: 1030px;
+    max-width: 51.5rem;
     margin: 0 auto;
 }
 .head__desc {
     box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
     position: absolute;
-    height: 267px;
-    width: 515px;
+    /* height: 267px; */
+    width: 25.75rem;
     display: block;
-    top: -222px;
+    top: -13.2rem;
     right: 0px;
     background-color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 0.5rem;
     z-index: 2;
 }
 .head__slogan {
-    margin-top: 20px;
-    font-size: 40px;
+    margin-top: 1rem;
+    font-size: 2rem;
     font-weight: 700;
     color: rgb(37, 37, 37);
     line-height: 1.2;
@@ -197,18 +199,18 @@ button {
     padding-bottom:33px;
 }
 .head__text {
-    font-size: 14px;
+    font-size: 0.7rem;
     font-weight: 300;
     color: rgb(36, 36, 36);
     line-height: 1.2;
-    padding-bottom: 15px;
-    padding-left: 23px;
-    padding-right: 30px;
+    padding-bottom: 1.6rem;
+    padding-left: 1.15rem;
+    padding-right: 1.5rem;
     text-align: left;  
 }
 /* Блок "Почему Мы" с 3 картинками */
 .advantages {
-    margin-bottom: 110px;
+    margin-bottom: 5.5rem;
 }
 .advantages__wrap {
     display: flex;
@@ -219,43 +221,48 @@ button {
     text-align: center;
 }
 .advantages__head {
-    margin-top: -10px;
+    margin-top: -0.5rem;
 }
 .advantages__head h2 {
-    padding-bottom: 115px;
+    padding-bottom: 5.75rem;
     color: rgb(37, 37, 37);
 }
 .advantages__image {
-    margin-bottom: 35px; 
-    height: 215px;
+    margin-bottom: 1.75rem; 
+    height: 10.75rem;
     display: inline-flex;
     align-items: flex-end;
+    width: 10rem;
 }
 .advantages__image img {
     transition: 1s;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
 }
 .advantages__image img:hover {
     transform: scale(1.1);
 }
 .advantages__subtitle h3 {  
-    font-size: 35px;
+    font-size: 1.75rem;
     font-weight: 900;
     color: rgb(36, 36, 36);
-    padding-bottom: 15px;
+    padding-bottom: 0.75rem;
 }
 .advantages__text p{
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.7rem;
     line-height: 1.2;
     color: rgb(36, 36, 36);
 }
 /* Блок с таблицой */
 .booking{
-    margin-bottom: 145px;
+    margin-bottom: 7.25rem;
 }
 .booking__header h2{
     text-align: center;
-    padding-bottom:78px;
+    padding-bottom: 3.9rem;
     font-weight: 700;
     color: rgb(37, 37, 37);
     line-height: 1.2;   
@@ -263,10 +270,10 @@ button {
 .table{
     border-collapse: collapse; 
     width: 100%;
-    border-radius: 15px;
+    border-radius: 0.75rem;
     overflow: hidden;
     color:#ffffff;
-    margin-bottom:40px;   
+    margin-bottom: 2rem;   
 }
 .table__row:nth-child(odd){
         background-color: #373737;
@@ -284,51 +291,51 @@ button {
     color: #5e9916;
 }
 .table__cell{
-    width: 250px;
-    font-size: 22px;
+    width: 12.5rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center;
     vertical-align: top;
-    padding: 25px 0;
+    padding: 1.25rem 0;
 }
 .table__mid{
-    width: 315px;
+    width: 15.75rem;
     text-align: left;
-    font-size: 22px;
+    font-size: 1.1rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     vertical-align: top;
-    padding: 25px 0;
+    padding: 1.25rem 0;
 }
 .table__text{
     text-align: left;
-    font-size: 22px;
+    font-size: 1.1rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     vertical-align: top;
-    padding: 25px 0;
+    padding: 1.25rem 0;
 }
  .table__icon{ /*кнопки плюсики */
     background: url(../images/More-icon.png) no-repeat  center;
-    background-size: 33px;
-    width: 100px;
+    background-size: 1.65rem;
+    width: 5rem;
 }
 .italic{
-    max-width: 830px;
+    max-width: 41.5rem;
     margin: 0 auto;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.7rem;
     font-weight: 300;
     color: rgb(36, 36, 36);
     line-height: 1.2;  
 }
 /* Блок с зеленой кнопкой и подарком */
 .action{
-    margin-bottom: 82px;
+    margin-bottom: 4.1rem;
 }
 .action__holder{
     position: relative;
@@ -338,39 +345,65 @@ button {
     background: url(../images/background_action.png) center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 35rem;
     position: relative;
     overflow: hidden;
     
-}.action__wrap::before{
-    content: "";
+}.action__wrap::before {
+    content: '';
+    width: 0;
+    top: 0;
+    height: 0;
+    border-left: 200vh solid #fff;
+    border-top: 0px solid #fff;
+    border-right: 0px solid transparent;
+    border-bottom:  13vh solid transparent;
+    position: absolute;
+    bottom: 0vh;
+    /* content: "";
     position: absolute;
     width: 120%;
-    height: 120px;
+    height: 6rem;
     background-color: white;
-    top: -70px;
+    top: -3.5rem;
     left:0;
-    transform: skewY(-5deg);
+    transform: skewY(-5deg); */
 }
-.action__wrap::after{
-    content: "";
+.action__wrap::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-top: 13vh solid transparent;
+    border-right: 200vh solid #fff;
+    border-bottom: 0px solid #fff;
+    position: absolute;
+    bottom: 0vh;
+    /* content: "";
     position: absolute;
     width: 120%;
     height: 120px;
     background-color: white;
     bottom: -45px;
     left:0;
-    transform: skewY(-5deg);
+    transform: skewY(-5deg); */
 }
 .action__box{
-    margin-top: -65px;
+    margin-top: -3.25rem;
     position: absolute;
     display: block;
-    left:160px;
+    left:8rem;
     z-index: 4;
+    width: 16.5rem;
+}
+.action__box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
 }
 .action__content{
-    padding-top: 138px;
+    padding-top: 6.9rem;
     text-align: right;
 }
 .action__content h2{
@@ -378,54 +411,63 @@ button {
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: right;
-    padding-bottom: 30px;
+    padding-bottom: 1.5rem;
 }
 .action__text{
-    margin-bottom: 20px;
-    width: 670px;
+    margin-bottom: 1rem;
+    width: 33.5rem;
     display: inline-block;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.7rem;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: right;
 }
 .action__text p{
-    margin-bottom: 15px;
+    margin-bottom: 0.75rem;
 }
-.action__btn p{
+.action__button {
+    border-radius: 0.75rem;
+    background-color: rgb(144, 210, 61);
+    height: 2.75rem;
+    padding: 0 1.75rem;
+    border: 0px;
+    font-size: 0.9rem;
     font-weight: 400;
-    font-size: 14px;
     color: rgb(255, 255, 255);
     line-height: 1.2;
-    text-align: right;
-    padding-bottom: 10px;
+    text-align: center; 
+}
+.action__button:hover {
+    background: none;
+    color: rgb(144, 210, 61);
+    border:2px solid rgb(144, 210, 61);
 }
 /* Каталог фильмов */
 .films__container {
-    max-width: 1030px;
+    max-width: 51.5rem;
     margin: 0 auto;   
 }
 .films h2 {
-    font-size: 50px;
+    font-size: 2.5rem;
     color: rgb(37, 37, 37);
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
-    padding-left: 30px;
-    margin-bottom: 43px;
+    padding-left: 1.5rem;
+    margin-bottom: 2.15rem;
 }
 .films__text {
-    font-size: 14px;
+    font-size: 0.7rem;
     font-weight: 300;
     color: rgb(36, 36, 36);
     text-align: left;
-    padding-left: 30px;
-    margin-bottom: 75px;
-    width: 700px;
+    padding-left: 1.5rem;
+    margin-bottom: 3.75rem;
+    width: 35rem;
 }
 .films__wrap {
-    margin-bottom: 100px;
+    margin-bottom: 5rem;
 }
 .films__table {
     display: grid;
@@ -433,31 +475,29 @@ button {
     "item1 item2 item3"
     "item4 . item5"
     "item6 item7 .";
-    /* grid-template-columns: repeat(3,1fr); */
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
 }
 .films__spider-man {
     position: relative;
-    width: 296px;
-    height: 296px;
+    width: 14.8rem;
+    height: 14.8rem;
     overflow: hidden;
-    margin-left: 30px;
+    margin-left: 1.5rem;
 }
 .films__dog-health {
     position: relative;
-    width: 296px;
-    height: 296px;
+    width: 14.8rem;
+    height: 14.8rem;
     overflow: hidden;
 }
 .films__people-black {
     position: relative;
-    width: 296px;
-    height: 296px;
+    width: 14.8rem;
+    height: 14.8rem;
     overflow: hidden;
-    margin-right: 30px;
+    margin-right: 1.5rem;
 }
 .item1 {
     grid-area: item1;
@@ -488,7 +528,7 @@ button {
     left: 0;
     right: 0;
     bottom: -100%;
-    border-radius: 11px;
+    border-radius: 0.55rem;
     display: flex;
     flex-direction: column;
     transition: 0.6s;
@@ -503,100 +543,175 @@ button {
     bottom: 0;
 }
 .films__title {
-    font-size: 35px;
+    font-size: 1.75rem;
     font-weight: 900;
     color: rgb(254, 254, 254);
     line-height: 1.2;
-    padding: 25px;
+    padding: 1.25rem;
 }
 .films__svg {
-    padding-left: 25px;
-    margin-bottom: 15px;
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
 
 }
 .films__description {
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: 500;
     color: rgb(254, 254, 254);
     line-height: 1.2;
     flex: 1;
-    padding-left: 25px;
+    padding-left: 1.25rem;
 }
 .films__pic {
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    padding: 1rem;
     width: 50%;
 }
 .films__pic img {
-    width: 30px !important;
-    height: 30px;
+    width: 1.5rem !important;
+    height: 1.5rem;
 }
 .owl-nav {
     position: relative;
-    top: -180px;
+    top: -9rem;
 }
 .owl-prev {
     position: absolute;
-    left: -80px;
+    left: -4rem;
 }
 .owl-prev span{
     background-color:rgb(144, 210, 61);
     border-radius: 20%; 
-    padding: 15px;
+    padding: 0.75rem;
 }
 .owl-next {
     position: absolute;
-    right: -40px;
+    right: -2rem;
 }
 .owl-next span {
     border-radius: 20%; 
-    padding: 15px;
+    padding: 0.75rem;
     background-color: rgb(144, 210, 61); 
 }
 /*  Карта расположения  */
 .maps {
    text-align: center;
+   width: 100%;
+   height: 22.5rem;
+   background-color: lightgrey;
 }
 /* Подвал сайта */
 .footer {
-    height: 220px;
+    height: 11.rem;
     background-color: #90d23d;
 }
 .footer__wrap {
-    max-width: 1030px;
+    max-width: 51.5rem;
     margin: 0 auto;
 }
 .footer__inner {
-    padding-left: 370px;
+    padding-left: 18.5rem;
 }
 .footer__wrap p {
     text-align: center;
     line-height: 1.2;
 }
 .footer__icon {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
     display: inline-block; 
 }
 .footer__icon img {
-    padding-right: 7px;
-    border-radius: 50px;
+    padding-right: 0.35rem;
+    border-radius: 2.5rem;
     box-shadow: inset 1px 1px 6px -3px rgba(0, 0, 0, 0.25);
 }
 .footer__icon img:hover {
     box-shadow: initial;
 }
-/* Всплывающее окно "получить подарок */
+/* Всплывающее окно "получить подарок" */
 #modalPresent {
     display: none;
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: #000;
-    opacity: 0.7;
+    background-color:rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
     z-index:100;
+    padding-top: 10rem;
 }
+#modalPresent .modal {
+    background-color: #ffffff;
+    width: 30rem;
+    margin:0 auto;
+    border-radius: 1rem;
+    position: relative;
+}
+#closemodalPresent {
+    position: absolute;
+    right: 1rem;
+    font-size: 1.5rem;
+    top:1rem;
+    cursor: pointer;
+    color: red;
+    border: none;
+    background-color: #ffffff;
+}
+.modalForm {
+    padding: 1rem;  
+}
+.input-wrap {
+    margin-top: 1rem;    
+}
+
 /* Медиа правила(медиа-запросы) */
+@media screen and (max-width:1200px) {
+    .head__navigation {
+        font-size: 0.85rem;
+    }
+    h1 {
+        margin-top: 10rem;
+    }
+    .head__text {
+        font-size: 0.85rem;
+    }
+    .advantages__text p {
+        font-size: .85rem;
+    }
+    .action__text {
+        font-size: .85rem;
+    }
+    .films__text {
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width:1000px) {
+    html {
+        font-size: 15px;
+    }
+    .owl-prev {
+        left: -1rem;
+    }
+    .owl-next {
+        right: -.8rem;
+    }
+}
+@media screen and (max-width:800px) {
+    .action__box {
+        left: 4rem;
+    }
+    .container {
+        width: 35rem;
+    }
+    .action__text {
+        width: 30rem;
+    }
+    .owl-nav {
+        display: none;
+    }
+    /* .table {
+        overflow: auto;
+    } */
+}

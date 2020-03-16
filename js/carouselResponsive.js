@@ -9,6 +9,10 @@ $('.owl-carousel').owlCarousel({
             nav:true,
         },
         600:{
+            items:2,
+            nav:true,
+        },
+        800:{
             items:3,
             nav:true,
         },
@@ -17,5 +21,6 @@ $('.owl-carousel').owlCarousel({
             nav:true,
             loop:false
         }
+        
     }
 })

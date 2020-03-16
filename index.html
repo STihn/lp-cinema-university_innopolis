@@ -6,8 +6,8 @@
         <title>Продажа билетов в кино в Иннополисе</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
-        <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
@@ -19,7 +19,7 @@
                     <div class="head__main"> 
                         <div class="head__logo">
                             <a href="http://university.innopolis.ru/" target="_blank" title="Университет Иннополис">
-                                <img src="/images/logo.png" class="logo" alt="Университет Иннополис" title="Университет Иннополис">
+                                <img src="images/logo.png" class="logo" alt="Университет Иннополис" title="Университет Иннополис">
                             </a>
                         </div>
                         <div class="head__navigation">
@@ -167,7 +167,7 @@
                         </div>
                         <div class="action__btn">
                             <form action="index.php" method="post">
-                                <button id="getPresent" type="button">Получить подарок</button>
+                                <button id="getPresent" type="button" class="action__button">Получить подарок</button>
                             </form>
                         </div>
                     </div>
@@ -333,7 +333,7 @@
         <!-- Карта расположения -->
         <section>
             <div class="maps">
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/1349x450.png"></a>
+                <!-- <a href="https://placeholder.com"><img src="https://via.placeholder.com/1349x450.png"></a> -->
             </div>
         </section>
         <!-- Подвал сайта -->
@@ -353,14 +353,37 @@
             </div>
         </footer>
         <div id="modalPresent">
-
-            
+            <div class="modal">
+                <button id="closemodalPresent">X</button>
+                <form action="">
+                    <div class="modalForm">
+                        <div class="input-wrap">
+                            <input id="firstname_guest" required type="text" placeholder="Имя"/>
+                        </div>
+                        <div class="input-wrap">
+                            <input id="lastname_guest" required type="text" placeholder="Фамилия"/>
+                        </div>
+                        <div class="input-wrap">
+                            <input id="select_guest" required list="present" placeholder="Выберите подарок"/>
+                            <datalist id="present">
+                                <option value="0">Выберите подарок</option>
+                                <option value="1">Подарок1</option>
+                                <option value="2">Подарок2</option>
+                                <option value="3">Подарок3</option>
+                            </datalist>
+                        </div>
+                        <div class="input-wrap">
+                            <button id="sendPresentInfo">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>  
         </div>
         <script src="js/films.js"></script>
-        <!-- <script src="js/getPresent.js"></script> -->
-        <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
-        <!-- <script src="js/owl.carousel.min.js"></script> -->
-        <!-- <script src="js/carouselResponsive.js"></script> -->
+        <script src="js/getPresent.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/carouselResponsive.js"></script>
 
         
     </body>
